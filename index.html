@@ -8,11 +8,23 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="brand" href="#">MZT</a>
+        <div class="nav-links">
+          <a href="#research">Research</a>
+          <a href="#education">Education</a>
+          <a href="#publications">Publications</a>
+          <a href="#internships">Internships</a>
+        </div>
+      </nav>
+    </header>
+
     <main class="page-shell">
       <aside class="profile-card" aria-label="Profile">
         <img class="portrait" src="portrait.jpg" alt="Portrait of MZT">
         <h1>MZT</h1>
-        <p class="role">Researcher</p>
+        <p class="role">Ph.D. Student</p>
 
         <ul class="contact-list">
           <li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
@@ -33,34 +45,7 @@
           </p>
         </section>
 
-        <section class="block" aria-labelledby="experience-title">
-          <h2 id="experience-title">Experience</h2>
-          <div class="item">
-            <div class="item-date">Year-present</div>
-            <div>
-              <h3>Position Title, Institution / Organization</h3>
-              <p>Briefly describe your current role, research projects, collaborations, or responsibilities.</p>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item-date">Year-Year</div>
-            <div>
-              <h3>Position Title, Institution / Organization</h3>
-              <p>Briefly describe your previous work, training, or academic experience.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="block" aria-labelledby="education-title">
-          <h2 id="education-title">Education</h2>
-          <div class="compact-list">
-            <p><strong>Ph.D.</strong>, University / Institution, Year-present</p>
-            <p><strong>M.S.</strong>, University / Institution, Year</p>
-            <p><strong>B.S.</strong>, University / Institution, Year</p>
-          </div>
-        </section>
-
-        <section class="block" aria-labelledby="research-title">
+        <section class="block" id="research" aria-labelledby="research-title">
           <h2 id="research-title">Research Interests</h2>
           <ul class="tag-list">
             <li>Research direction 1</li>
@@ -69,7 +54,16 @@
           </ul>
         </section>
 
-        <section class="block" aria-labelledby="publications-title">
+        <section class="block" id="education" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="compact-list">
+            <p><strong>Ph.D.</strong>, University / Institution, Year-present</p>
+            <p><strong>M.S.</strong>, University / Institution, Year</p>
+            <p><strong>B.S.</strong>, University / Institution, Year</p>
+          </div>
+        </section>
+
+        <section class="block" id="publications" aria-labelledby="publications-title">
           <h2 id="publications-title">Publications</h2>
           <ol class="publication-list">
             <li>
@@ -85,6 +79,24 @@
               "Paper Title." <em>Journal or Conference Name</em>, Year.
             </li>
           </ol>
+        </section>
+
+        <section class="block" id="internships" aria-labelledby="internships-title">
+          <h2 id="internships-title">Internship Experience</h2>
+          <div class="item">
+            <div class="item-date">Year</div>
+            <div>
+              <h3>Internship Title, Company / Institution</h3>
+              <p>Briefly describe your internship work, project contribution, or technical responsibilities.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-date">Year</div>
+            <div>
+              <h3>Internship Title, Company / Institution</h3>
+              <p>Briefly describe your previous internship, research assistantship, or applied project.</p>
+            </div>
+          </div>
         </section>
       </section>
     </main>
