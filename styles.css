@@ -38,50 +38,45 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  padding: 12px 0;
-  background: rgba(244, 241, 234, 0.82);
-  backdrop-filter: blur(16px);
+  background: rgba(244, 241, 234, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(12px);
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 54px;
   width: min(1120px, calc(100% - 40px));
+  min-height: 56px;
   margin: 0 auto;
-  padding: 10px 14px 10px 18px;
-  background: rgba(255, 255, 255, 0.86);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: 0 10px 28px rgba(31, 35, 40, 0.06);
 }
 
 .brand {
-  color: var(--text);
-  font-size: 0.98rem;
+  color: var(--muted);
+  font-size: 0.9rem;
   font-weight: 850;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 34px;
   align-items: center;
-  justify-content: flex-end;
-  font-size: 0.88rem;
+  font-size: 0.9rem;
 }
 
 .nav-links a {
   color: var(--muted);
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
-  padding: 6px 10px;
-  border-radius: 6px;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
-  background: #f4f1ea;
   color: var(--accent-dark);
 }
 
@@ -235,6 +230,11 @@ h3 {
   gap: 8px;
 }
 
+.simple-list {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
@@ -280,20 +280,17 @@ h3 {
   }
 
   .nav {
-    display: grid;
-    gap: 8px;
+    align-items: flex-start;
+    gap: 14px;
     width: min(100% - 28px, 680px);
-    padding: 10px 12px;
+    min-height: auto;
+    padding: 12px 0;
   }
 
   .nav-links {
     justify-content: flex-start;
-    gap: 4px;
+    gap: 12px 18px;
     font-size: 0.84rem;
-  }
-
-  .nav-links a {
-    padding: 5px 8px;
   }
 
   .page-shell {
