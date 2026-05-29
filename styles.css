@@ -119,14 +119,16 @@ p {
 
 .profile-card h1 {
   margin: 22px 0 4px;
-  font-size: 2rem;
-  line-height: 1.05;
+  font-size: 1.62rem;
+  line-height: 1.15;
   letter-spacing: 0;
 }
 
 .chinese-name {
   color: var(--muted);
+  font-size: 0.9em;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .role {
