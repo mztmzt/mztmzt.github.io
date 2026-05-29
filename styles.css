@@ -109,7 +109,8 @@ p {
 
 .portrait {
   display: block;
-  width: 100%;
+  width: 86%;
+  margin: 0 auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   background: #e7e0d4;
@@ -127,8 +128,9 @@ p {
 .chinese-name {
   color: var(--muted);
   display: inline-block;
+  font-family: KaiTi, STKaiti, "Kaiti SC", "Songti SC", SimKai, serif;
   font-size: 0.9em;
-  font-weight: 500;
+  font-weight: 400;
   margin-left: 0.5rem;
   white-space: nowrap;
 }
