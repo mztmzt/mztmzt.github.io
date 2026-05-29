@@ -326,6 +326,21 @@ h3 {
   margin-top: 2px;
 }
 
+.publication-links {
+  margin-top: 2px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+}
+
+.publication-links a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  text-decoration: underline;
+}
+
 .publication-note {
   margin: 12px 0 0;
   color: var(--muted);
