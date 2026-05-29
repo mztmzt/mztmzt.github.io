@@ -8,118 +8,69 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#">MZT</a>
-        <div class="nav-links">
-          <a href="#cv">CV</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </nav>
-    </header>
+    <main class="page-shell">
+      <aside class="profile-card" aria-label="Profile">
+        <img class="portrait" src="portrait.jpg" alt="Portrait of MZT">
+        <h1>MZT</h1>
+        <p class="role">Researcher</p>
 
-    <main>
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-content">
+        <ul class="contact-list">
+          <li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><span>GitHub</span><a href="https://github.com/mztmzt">github.com/mztmzt</a></li>
+          <li><span>Scholar</span><a href="#">To be added</a></li>
+        </ul>
+      </aside>
+
+      <section class="content" aria-label="Academic information">
+        <section class="block intro-block" aria-labelledby="about-title">
           <p class="eyebrow">Personal Academic Website</p>
-          <h1 id="page-title">MZT</h1>
-          <p class="lead">
-            I am a researcher building my academic work around rigorous problem
-            formulation, careful empirical analysis, and reproducible research.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#publications">View Publications</a>
-            <a class="button secondary" href="#contact">Contact</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="profile" aria-labelledby="profile-title">
-        <div class="section-label">Profile</div>
-        <div class="section-body">
-          <h2 id="profile-title">Research Profile</h2>
+          <h2 id="about-title">About</h2>
           <p>
-            My research interests include topics that connect theory, data, and
-            practical systems. I focus on developing reliable methods, producing
-            clear evidence, and communicating results in a form that can be
-            reused by other researchers.
+            I am a researcher building my academic work around rigorous problem
+            formulation, careful empirical analysis, and reproducible research,
+            with interests in questions that connect theory, data, and practical
+            systems.
           </p>
-          <ul class="pill-list" aria-label="Research interests">
+        </section>
+
+        <section class="block" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience</h2>
+          <div class="item">
+            <div class="item-date">Year-present</div>
+            <div>
+              <h3>Position Title, Institution / Organization</h3>
+              <p>Briefly describe your current role, research projects, collaborations, or responsibilities.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="item-date">Year-Year</div>
+            <div>
+              <h3>Position Title, Institution / Organization</h3>
+              <p>Briefly describe your previous work, training, or academic experience.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="education-title">
+          <h2 id="education-title">Education</h2>
+          <div class="compact-list">
+            <p><strong>Ph.D.</strong>, University / Institution, Year-present</p>
+            <p><strong>M.S.</strong>, University / Institution, Year</p>
+            <p><strong>B.S.</strong>, University / Institution, Year</p>
+          </div>
+        </section>
+
+        <section class="block" aria-labelledby="research-title">
+          <h2 id="research-title">Research Interests</h2>
+          <ul class="tag-list">
             <li>Research direction 1</li>
             <li>Research direction 2</li>
             <li>Research direction 3</li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <section class="section" id="cv" aria-labelledby="cv-title">
-        <div class="section-label">CV</div>
-        <div class="section-body">
-          <h2 id="cv-title">Curriculum Vitae</h2>
-
-          <div class="cv-group">
-            <h3>Education</h3>
-            <div class="timeline">
-              <article>
-                <span class="date">Year-present</span>
-                <h4>Ph.D., University / Institution</h4>
-                <p>Field or program name.</p>
-              </article>
-              <article>
-                <span class="date">Year</span>
-                <h4>M.S., University / Institution</h4>
-                <p>Field or program name.</p>
-              </article>
-              <article>
-                <span class="date">Year</span>
-                <h4>B.S., University / Institution</h4>
-                <p>Field or program name.</p>
-              </article>
-            </div>
-          </div>
-
-          <div class="cv-group">
-            <h3>Academic Experience</h3>
-            <div class="timeline">
-              <article>
-                <span class="date">Year-present</span>
-                <h4>Position Title, Institution / Organization</h4>
-                <p>
-                  Briefly describe your current role, research projects,
-                  collaborations, or responsibilities.
-                </p>
-              </article>
-              <article>
-                <span class="date">Year-Year</span>
-                <h4>Position Title, Institution / Organization</h4>
-                <p>
-                  Briefly describe your previous work, training, or academic
-                  experience.
-                </p>
-              </article>
-            </div>
-          </div>
-
-          <div class="cv-group">
-            <h3>Selected Skills</h3>
-            <ul class="detail-list">
-              <li><strong>Research:</strong> literature review, research design, data analysis, academic writing</li>
-              <li><strong>Programming:</strong> Python, R, MATLAB, LaTeX, Git</li>
-              <li><strong>Languages:</strong> English, Chinese</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-label">Publications</div>
-        <div class="section-body">
+        <section class="block" aria-labelledby="publications-title">
           <h2 id="publications-title">Publications</h2>
-          <p class="section-intro">
-            Replace the sample entries below with your actual papers,
-            conference publications, preprints, or manuscripts.
-          </p>
           <ol class="publication-list">
             <li>
               <strong>Author A, Author B, and MZT.</strong>
@@ -134,24 +85,12 @@
               "Paper Title." <em>Journal or Conference Name</em>, Year.
             </li>
           </ol>
-        </div>
-      </section>
-
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <div class="section-label">Contact</div>
-        <div class="section-body">
-          <h2 id="contact-title">Contact</h2>
-          <ul class="contact-list">
-            <li><span>Email</span><a href="mailto:your.email@example.com">your.email@example.com</a></li>
-            <li><span>GitHub</span><a href="https://github.com/mztmzt">github.com/mztmzt</a></li>
-            <li><span>Google Scholar</span><a href="#">To be added</a></li>
-          </ul>
-        </div>
+        </section>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year">2026</span> MZT. Last updated May 28, 2026.</p>
+      <p>&copy; 2026 MZT. Last updated May 29, 2026.</p>
     </footer>
   </body>
 </html>
