@@ -410,8 +410,17 @@ h3 {
 }
 
 .visitor-map-widget {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 2px 0 10px;
+}
+
+.visitor-map-widget img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .visitor-map-placeholder {
