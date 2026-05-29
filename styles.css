@@ -48,7 +48,7 @@ a {
   align-items: center;
   justify-content: flex-start;
   gap: 28px;
-  width: min(1120px, calc(100% - 40px));
+  width: min(1280px, calc(100% - 40px));
   min-height: 56px;
   margin: 0 auto;
 }
@@ -89,9 +89,9 @@ p {
 
 .page-shell {
   display: grid;
-  grid-template-columns: 300px minmax(0, 760px);
-  gap: 34px;
-  width: min(1120px, calc(100% - 40px));
+  grid-template-columns: 300px minmax(0, 900px);
+  gap: 42px;
+  width: min(1280px, calc(100% - 40px));
   margin: 0 auto;
   padding: 28px 0 24px;
   align-items: start;
@@ -141,29 +141,31 @@ p {
 
 .contact-list {
   display: grid;
-  gap: 12px;
+  gap: 10px;
   padding: 18px 0 0;
   margin: 0;
   border-top: 1px solid var(--line);
   list-style: none;
 }
 
-.contact-list li {
-  display: grid;
-  gap: 2px;
-}
-
-.contact-list span {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .contact-list a {
-  overflow-wrap: anywhere;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #4b5563;
   font-size: 0.95rem;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  color: var(--accent-dark);
+}
+
+.contact-list svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  fill: currentColor;
 }
 
 .content {
@@ -244,9 +246,69 @@ h3 {
   margin-top: 6px;
 }
 
+.project-link-list {
+  display: grid;
+  gap: 12px;
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.project-link-list a {
+  color: #0645ad;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.project-link-list a:hover {
+  text-decoration: underline;
+}
+
+.project-link-list p {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.project-links {
+  margin-left: 6px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.94rem;
+}
+
+.project-links a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
 .compact-list {
   display: grid;
   gap: 8px;
+}
+
+.education-list {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.education-list div {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+}
+
+.education-list dt {
+  font-weight: 800;
+}
+
+.education-list dd {
+  margin: 0;
 }
 
 .simple-list {
